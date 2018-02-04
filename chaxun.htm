@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>签到查询
+</title>
+	<link href="bootstrap/css/domain.css" rel="stylesheet" />
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="bootstrap/js/jqueryv2.1.js"></script>
+	<script type="text/javascript" src="bootstrap/js/showdate.js"></script>
+	<style>
+	body{text-align: center;}
+	.div_content_left{
+		margin: 0 auto;
+		text-align: left;
+		width: 400px
+	}
+
+	.text_time{
+	width: 207px;
+	height: 35px;
+	background: #ffffff;
+	border:1px solid #56da9e;		
+	}
+	</style>
+</head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<body>
+<form action="chaxun.php" method="post">
+<br>
+<div class="div_content_left">
+<br>
+请输入查询日期
+<p>
+查询日期:
+
+<div style="width:520px;margin:0 auto;">
+	<input name="chaxun_time" type="text" id="time" value="选择时间" size="20" onClick="return Calendar('time');" class="text_time"/>
+</div>
+<input name="submit" type="submit" value="查询" class="button bg-sub"/>
+<input type="reset" value="清空" class="button bg-main"/><br>
+</div>
+</body>
+</html>
